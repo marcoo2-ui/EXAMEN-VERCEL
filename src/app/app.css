@@ -1,0 +1,16 @@
+/* ==== Game of Thrones Theme ==== */
+
+body {
+  background: radial-gradient(circle at top, #0b0c10 0%, #1f2833 80%);
+  color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif;
+  color: #c5a46d;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(197, 164, 109, 0.3);
+}
+

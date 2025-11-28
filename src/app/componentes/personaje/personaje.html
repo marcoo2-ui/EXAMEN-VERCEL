@@ -1,0 +1,19 @@
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+  <div class="card card-horizontal">
+    <div class="card-img-container">
+      <img [src]="personaje.imageUrl" class="card-img-left" alt="{{ personaje.fullName }}" />
+    </div>
+    <div class="card-body info">
+      <h5 class="card-title text-center">{{ personaje.fullName }}</h5>
+      <p class="card-text text-secondary title">{{ getCharacterTitle2(personaje.title) }}</p>
+      <p class="card-text family">
+        <strong [ngStyle]="getFamilyColors(personaje.family)"> {{ personaje.family }}</strong>
+      </p>
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <button class="btn-got" routerLink="/personajes">⚔️ Regresar con los otros 📖</button>
+    <button class="btn-got" routerLink="/home">🏰 Volver a donde todo comienza 🛡️</button>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+
+.container {
+  min-height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* ==== Tarjeta Horizontal GOT ==== */
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(145deg, #1f2833 0%, #0b0c10 100%);
+  border: 1px solid #c5a46d;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(197, 164, 109, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100vw;       /* Ocupa 80% del ancho de la ventana */
+  max-width: 1700px; /* Tamaño máximo para pantallas grandes */
+  height: 1000px;     /* Mantener altura consistente */
+  overflow: hidden;
+}
+
+.card-horizontal:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 35px rgba(102, 252, 241, 0.4);
+}
+
+/* ==== Imagen izquierda ==== */
+.card-img-container {
+  width: 50%; /* La imagen ocupa 40% del ancho de la tarjeta */
+  min-width: 300px; /* Tamaño mínimo para pantallas pequeñas */
+  overflow: hidden;
+  background-color: #111;
+}
+
+.card-img-left {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==== Contenido ==== */
+.card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%; /* El cuerpo ocupa el 60% restante */
+}
+
+.card-title {
+  font-family: 'Cinzel', serif;
+  color: #c5a46d;
+  font-size: 10rem; /* Ajustable según diseño */
+  line-height: 1.2;
+}
+
+.title {
+  font-size: 5rem;
+  color: #ddd;
+  margin-bottom: 100px;
+}
+
+.family{
+   font-size: 4rem;
+   padding: 20px
+}
+
+.btn-got {
+  background: linear-gradient(90deg, #c5a46d 0%, #a87c3a 100%);
+  color: #0b0c10;
+  border: none;
+  font-weight: bold;
+  font-size: 2em;
+  transition: all 0.3s ease;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 50px;
+
+}
+
+.btn-got:hover {
+  background: linear-gradient(90deg, #d1d1d1 0%, #a5a5a5 100%);
+  color: #0b0c10;
+  box-shadow: 0 0 20px rgba(244, 244, 244, 0.6);
+}
+
